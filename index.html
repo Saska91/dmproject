@@ -39,26 +39,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     </div>
 
-    <div id="donate-now">
-        <p>Do you want to help us doing good?</p>
-        <a class="btn" onclick="trackDonation()" href="#">Donate now!</a>
-        <script>
-            function trackDonation() {
-                dataLayer.push(
-                    {'event':'donation'}
-                );
-                alert('thank you!');
-            }
-        </script>
-    </div>
-<script type="text/javascript">
-  urlParams = new URLSearchParams(window.location.search);
-  document.querySelector('#source').value = urlParams.get('utm_source');
-  document.querySelector('#medium').value = urlParams.get('utm_medium');
-  document.querySelector('#campaign').value = urlParams.get('utm_campaign');
-</script>
-</body>
-</html>
-
+    
 </body>
 </html>
