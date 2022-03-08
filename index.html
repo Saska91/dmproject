@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="it">
 <head>
-  
+
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -10,39 +10,36 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-W88QK3V');</script>
 <!-- End Google Tag Manager -->
 
-  <title>Basic Landing Page</title>
-<meta name="description" content="Our landing page!">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style type="text/css">
-.container {font:sans-serif ; max-width: 800px; margin: auto; text-align: left; padding: 20px; color: darkslateblue; }
-.btn { background: blueviolet; color: white; padding: 8px}
-.text {font-size: 18px; font: sans-serif ; font-weight: bold; max-width: 800px; margin: auto; text-align: left; padding: auto; color:darkslateblue;}
-</style>
+    <title>Basic Landing Page</title>
+    <meta name="description" content="Our landing page!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        .container { max-width: 800px; margin: auto; text-align: center; }
+        .btn { background: blue; color: white; padding: 8px}
+        #donate-now {
+            position: absolute;
+            bottom: 8px; right: 8px; padding: 24px; text-align: right;
+            background: lightyellow;
+        }
+     </style>
 </head>
 <body>
 
-  <!-- Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W88QK3V"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-  
-  <div class="text">
-    <img src="https://thumbs.dreamstime.com/b/hand-draw-blue-credit-card-pay-bank-transaction-color-illustration-eps-82657827.jpg" / width="50" hight='30'><p1>PayRev</p1>
 
-<h1>A better way to be paid.</h1>
-<p>Try our POS and our e-commerce checkout for a fast and smooth payment experience.</p>
+    <div class="container">
+        <h1>Buy our amazing product</h1>
+        <p>This is our product! It only costs <b>$19.95</b>!</p>
+        <!-- <a class="btn" href="/lumsa-landing/thank-you.html">Buy now</a></p>  -->
+    </div>
 
-<img src="https://cdn2.iconfinder.com/data/icons/online-shopping-131/512/smartphone_shopping_basket_cart_online_checkout-512.png" alt='no' align="right"/ width="200" hight='140'>
-<img src="https://images.assetsdelivery.com/compings_v2/shaihalud/shaihalud1906/shaihalud190600023.jpg" align="right" / width="300" hight='240'>
-
-</div>
-  
-<div class="container">
-    <p>Schedule an appointment with our experts!</p>
-        <form action="https://hook.eu1.make.com/mzwcxl2qf9r1dl4dh84atupph7ilqtwo" method="post">
+    <div class="container">
+        <form action="https://hook.integromat.com/z7aiefd69bomjtoftfqnb5pqlfq43s23" method="post">
             <input type="text" placeholder="name" name="first_name" required="required"><br/>
             <input type="text" placeholder="last name" name="last_name" required="required"><br/>
-            <input type="text" placeholder="business name" name="business name"><br/>
             <input type="email" placeholder="email" name="email" required="required"><br/>
             <input type="hidden" id="source" name="source" />
             <input type="hidden" id="medium" name="medium" />
@@ -52,7 +49,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     </div>
 
- 
+    <div id="donate-now">
+        <p>Do you want to help us doing good?</p>
+        <a class="btn" onclick="trackDonation()" href="#">Donate now!</a>
+        <script>
+            function trackDonation() {
+                dataLayer.push(
+                    {'event':'donation'}
+                );
+                alert('thank you!');
+            }
+        </script>
+    </div>
 <script type="text/javascript">
   urlParams = new URLSearchParams(window.location.search);
   document.querySelector('#source').value = urlParams.get('utm_source');
