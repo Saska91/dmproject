@@ -60,33 +60,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
 
-    
-<script type="text/javascript">
+    <script type="text/javascript">
   urlParams = new URLSearchParams(window.location.search);
   document.querySelector('#source').value = urlParams.get('utm_source');
   document.querySelector('#medium').value = urlParams.get('utm_medium');
   document.querySelector('#campaign').value = urlParams.get('utm_campaign');
-</script>
-  <div id="cookies-eu-banner" style="display: none;">
-<p>We are using Cookies to offer you a better service. Are you happy?</p>
-<p>First read our <a href="/cookie-policy" target="_blank">Cookie Policy</a> then
-tell us what you think!</p>
-<button id="cookies-eu-reject">Reject cookies</button>
-<button id="cookies-eu-accept">Accept cookies</button>
+
+<div id="cookies-eu-banner" style="display: none;">
+  <p>We are using Cookies to offer you a better service. Are you happy?</p>
+  <p>First read our <a href="/cookie-policy" target="_blank">Cookie Policy</a> then 
+  tell us what you think!</p>
+  <button id="cookies-eu-reject">Reject cookies</button>
+  <button id="cookies-eu-accept">Accept cookies</button>
 </div>
-<script
-src="https://cdn.jsdelivr.net/npm/cookies-eu-banner@2.0.1/dist/cookies-eu-banne
-r.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/cookies-eu-banner@2.0.1/dist/cookies-eu-banner.min.js"></script>
 <link rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/cookies-eu-banner@2.0.1/css/cookies-eu-banne
-r.default.css" />
+href="https://cdn.jsdelivr.net/npm/cookies-eu-banner@2.0.1/css/cookies-eu-banner.default.css" />
 <style type="text/css"> #cookies-eu-banner { position: absolute; background:
 rgba(0,0,0,0.6); bottom: 0px; left: 20%; width: 60%; padding: 40px}</style>
 <script>
-new CookiesEuBanner(function () {
-console.log('Cookies accepted');
-dataLayer.push({'event':'consentedPageView', 'hasConsent': true});
-}, true);
+  new CookiesEuBanner(function () {
+    console.log('Cookies accepted');
+    dataLayer.push({'event':'consentedPageView', 'hasConsent': true});
+  }, true);
 </script>
+  
 </body>
 </html>
