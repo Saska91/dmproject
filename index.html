@@ -23,12 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </style>
 </head>
 <body>
-   <div id="cookies-eu-banner" style="display: none;">
-    By continuing to visit this site, you accept the use of cookies by Google Analytics for statistical purposes.
-    <a href="./read-more.html" id="cookies-eu-more">Read more</a>
-    <button id="cookies-eu-reject">Reject</button>
-    <button id="cookies-eu-accept">Accept</button>
-</div>
+ 
   <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KKHVL26"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -76,14 +71,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   document.querySelector('#source').value = urlParams.get('utm_source');
   document.querySelector('#medium').value = urlParams.get('utm_medium');
   document.querySelector('#campaign').value = urlParams.get('utm_campaign');
-</script>
-     <script src="cookies-eu-banner/dist/cookies-eu-banner.min.js"></script>
-<script>
-       new CookiesEuBanner(function () {
-console.log('Cookies accepted');
-dataLayer.push({'event':'consentedPageView'});
-}, true);
-    });
+
 </script>
 </body>
 </html>
